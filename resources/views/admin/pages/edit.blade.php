@@ -19,7 +19,7 @@
                 <div class="widget-header">
                     <div class="row">
                         <div class="col-xl-12 col-md-12 col-sm-12 col-12">
-                            <h4>Update Page</h4>
+                            <h4>Update About Us</h4>
                         </div>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                                         <div class="col-sm-10">
                                             <?php 
                                                 if($row['image_name'] != ""){ 
-                                                    echo '<image src="'.asset('page_images').'/'.$row['image_name'].'" class="img-responsive">';
+                                                    echo '<image src="'.asset('page_images').'/'.$row['image_name'].'" class="img-responsive mb-4" height="600px" width="500px">';
                                                 }
                                             ?>
                                             <input type="file" class="form-control" name="image_name" id="image_name">
@@ -75,7 +75,7 @@
                                     <div class="form-group">
                                         <div class="col-sm-10 col-sm-offset-2">
                                             <button type="submit" class="btn btn-primary btn-flat submit">{{trans('label.Update')}}</button>
-                                            <a href="{{url('/admin/pages')}}" class="btn btn-flat btn-default">{{trans('label.Back')}}</a>
+                                            <a href="{{url('/admin')}}" class="btn btn-flat btn-default">{{trans('label.Back')}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -133,4 +133,3 @@ $(".add_product").validate({
     }
 });
 </script>
-@stop
