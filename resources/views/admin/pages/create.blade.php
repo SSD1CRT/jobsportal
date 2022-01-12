@@ -116,4 +116,3 @@ $(".add_product").validate({
     }
 });
 </script>
-@stop
